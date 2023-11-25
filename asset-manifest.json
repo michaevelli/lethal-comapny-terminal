@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lethal-company-terminal/static/css/main.1c4881f1.css",
-    "main.js": "/lethal-company-terminal/static/js/main.1626c18e.js",
+    "main.js": "/lethal-company-terminal/static/js/main.c973a3a0.js",
     "static/js/787.7683cfa7.chunk.js": "/lethal-company-terminal/static/js/787.7683cfa7.chunk.js",
     "index.html": "/lethal-company-terminal/index.html",
     "main.1c4881f1.css.map": "/lethal-company-terminal/static/css/main.1c4881f1.css.map",
-    "main.1626c18e.js.map": "/lethal-company-terminal/static/js/main.1626c18e.js.map",
+    "main.c973a3a0.js.map": "/lethal-company-terminal/static/js/main.c973a3a0.js.map",
     "787.7683cfa7.chunk.js.map": "/lethal-company-terminal/static/js/787.7683cfa7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c4881f1.css",
-    "static/js/main.1626c18e.js"
+    "static/js/main.c973a3a0.js"
   ]
 }
