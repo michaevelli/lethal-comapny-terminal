@@ -9,7 +9,7 @@ import renderDisplay from './functions/renderDisplay';
 
 function App() {
   // 35 character line limit
-  const today = new Date();
+  const today = useMemo(() => new Date(), []);
   const defaultText = useMemo(() => [
     `Welcome to the FORTUNE-9 OS`,
     `          Courtesy of the Company`,
