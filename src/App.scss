@@ -1,0 +1,26 @@
+body {
+  background: black;
+}
+main {
+  .terminal {
+    --font-size: 32;
+    --line-height: 1.5;
+    color: #00FF00;
+    font-size: calc( 1px * var(--font-size) );
+    white-space: pre-wrap;
+    line-height: var(--line-height);
+    .row {
+      min-height: calc( 1px * var(--line-height) * var(--font-size) );
+    }
+    .hidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+}
