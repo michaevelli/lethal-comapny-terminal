@@ -9,10 +9,16 @@ jobs:
     steps:
       - name: checkout site repo
         uses: actions/checkout@v3
-      - name: deploy
+      - name: debugging
+        run : |
+          echo "$GITHUB_CONTEXT"
+      - name: npm install
         run: |
           npm i
-          echo "$GITHUB_CONTEXT"
+      - name: sign in
+        run : |
           git config --global user.email "${{github.actor}}@users.noreply.github.com"
           git config --global user.name "${{github.actor}}"
+      - name: deploy
+        run: |
           npm run deploy
