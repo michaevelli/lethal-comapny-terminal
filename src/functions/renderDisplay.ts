@@ -369,9 +369,22 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
             `Cozy lights   //   ▪️140`,
             ``
         ])
+    } else if (input === `bestiary`) {
+        setDisplay([
+            `BESTIARY`,
+            ``,
+            `To access a creature file, type "INFO" after its`,
+            `name.`,
+            `---------------------------------`,
+            ``,
+            ``,
+            `Roaming locusts`,
+            ``,
+            ``
+        ])
     } else if (input === `storage`) {
         setDisplay([
-            `WHile moving furnature with [B], you can press [X]`,
+            `While moving furnature with [B], you can press [X]`,
             `to send it to storage. You can call it back from`,
             `storage here.`,
             ``,
