@@ -1,14 +1,15 @@
 import { 
   useState,
   useEffect,
-  useRef
+  useRef,
+  useMemo
 } from 'react';
 import './App.scss';
 import renderDisplay from './functions/renderDisplay';
 
 function App() {
   // 35 character line limit
-  const defaultText = [
+  const defaultText = useMemo(() => [
     `Welcome to the FORTUNE-9 OS`,
     `          Courtesy of the Company`,
     `Happy Saturday.`,
@@ -17,7 +18,7 @@ function App() {
     ``,
     ``,
     ``,
-  ];
+  ], [] );
   const [init, setInit] = useState(false);
   const [display, setDisplay] = useState(defaultText);
   const [input, setInput] = useState("");
