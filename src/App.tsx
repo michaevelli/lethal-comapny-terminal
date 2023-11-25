@@ -22,8 +22,6 @@ function App() {
   const [init, setInit] = useState(false);
   const [display, setDisplay] = useState(defaultText);
   const [input, setInput] = useState("");
-  //const [cursor, setCursor] = useState("|");
-  const cursor = "|"
   const inputRef = useRef(null);
   useEffect(() => {
     if (!init) {
@@ -46,7 +44,7 @@ function App() {
         {display.map((line, index) => (
           <div key={index} className="row">{line}</div>
         ))}
-        <div className="row">{input}{cursor}</div>
+        <div className="row input">{input}</div>
         <input
           className="hidden"
           ref={inputRef}

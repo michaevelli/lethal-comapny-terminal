@@ -5,7 +5,8 @@ main {
   .terminal {
     --font-size: 32;
     --line-height: 1.5;
-    color: #00FF00;
+    --text-color: #00FF00;
+    color: var(--text-color);
     font-size: calc( 1px * var(--font-size) );
     white-space: pre-wrap;
     line-height: var(--line-height);
@@ -22,5 +23,27 @@ main {
       position: absolute;
       width: 1px;
     }
+    .input {
+      position: relative;
+      width: min-content;
+      white-space: nowrap;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        right: -8px;
+        top: 2px;
+        bottom: 2px;
+        background-color: var(--text-color);
+        animation: blink-animation 0.5s steps(5, start) infinite;
+      }
+    }
+  }
+}
+
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
 }
