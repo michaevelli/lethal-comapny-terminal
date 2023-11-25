@@ -37,7 +37,7 @@ function App() {
         }
       })
     }
-  }, [init, defaultText, inputRef]);
+  }, [init, defaultText, inputRef, today]);
 
   return (
     <main>
