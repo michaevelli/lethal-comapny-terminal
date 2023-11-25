@@ -1,2 +1,0 @@
-body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:#000;font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace;margin:0}main .terminal{--font-size:32;--line-height:1.5;color:lime;font-size:calc(1px*var(--font-size));line-height:var(--line-height);white-space:pre-wrap}main .terminal .row{min-height:calc(1px*var(--line-height)*var(--font-size))}main .terminal .hidden{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
-/*# sourceMappingURL=main.1c4881f1.css.map*/
