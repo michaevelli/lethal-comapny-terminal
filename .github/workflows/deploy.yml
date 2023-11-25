@@ -12,4 +12,6 @@ jobs:
       - name: deploy
         run: |
           npm i
+          git config --global user.email "${GH_USERNAME}@users.noreply.github.com"
+          git config --global user.name "${GH_USERNAME}"
           npm run deploy
