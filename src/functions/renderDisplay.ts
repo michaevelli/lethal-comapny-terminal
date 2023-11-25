@@ -1,18 +1,12 @@
+import getRandomStats from "./getRandomFunctions";
+
 function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateAction<string[]>>, postExecuteFunction: Function | null = null) {
     input = input.toLowerCase();
-    const companyPercent = `0`;
-    const experimentationWeather = ``;
-    const assuranceWeather = ``;
-    const vowWeather = ``;
-    const offenseWeather = ``;
-    const marchWeather = ``;
-    const RendWeather = ``;
-    const dineWeather = ``;
-    const titanWeather = ``;
+    const stats = getRandomStats()
     if (input.includes("info")) {
         if (input.includes("company")) {
             setDisplay([
-                `The Company is buying your goods at ${companyPercent}%.`,
+                `The Company is buying your goods at ${stats.company.percentage}%.`,
                 ``,
                 `Go here to drop off any valuable scrap you've`,
                 `collected while on the job. The rate of return`,
@@ -425,7 +419,8 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `prevent an attack. They prefer smaller mammals, but`,
                 `when desparate they are known to use their numbers`,
                 `to attack animals even twice their size, such as`,
-                `eyeless dogs. THEY TOOK M Y PICKLES`
+                `eyeless dogs. THEY TOOK M Y PICKLES`,
+                ``
             ])
         } else if (input.includes("bunker spiders")) {
             setDisplay([
@@ -694,18 +689,18 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
             `ROUTE.`,
             `To learn more about any moon, use the word INFO.`,
             `----------------------------`,
-            `* The Company Building   //   Buying at ${companyPercent}%`,
+            `* The Company Building   //   Buying at ${stats.company.percentage}%`,
             ``,
-            `* Experimentation${experimentationWeather ? ` (${experimentationWeather})` : ``}`,
-            `* Assurance${assuranceWeather ? ` (${assuranceWeather})` : ``}`,
-            `* Vow${vowWeather ? ` (${vowWeather})` : ``}`,
+            `* Experimentation${stats.weather.experimentation ? ` (${stats.weather.experimentation})` : ``}`,
+            `* Assurance${stats.weather.assurance ? ` (${stats.weather.assurance})` : ``}`,
+            `* Vow${stats.weather.vow ? ` (${stats.weather.vow})` : ``}`,
             ``,
-            `* Offense${offenseWeather ? ` (${offenseWeather})` : ``}`,
-            `* March${marchWeather ? ` (${marchWeather})` : ``}`,
+            `* Offense${stats.weather.offense ? ` (${stats.weather.offense})` : ``}`,
+            `* March${stats.weather.march ? ` (${stats.weather.march})` : ``}`,
             ``,
-            `* Rend${RendWeather ? ` (${RendWeather})` : ``}`,
-            `* Dine${dineWeather ? ` (${dineWeather})` : ``}`,
-            `* Titan${titanWeather ? ` (${titanWeather})` : ``}`,
+            `* Rend${stats.weather.rend ? ` (${stats.weather.rend})` : ``}`,
+            `* Dine${stats.weather.dine ? ` (${stats.weather.dine})` : ``}`,
+            `* Titan${stats.weather.titan ? ` (${stats.weather.titan})` : ``}`,
             ``
         ])
     } else if (input === `store`) {
