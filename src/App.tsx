@@ -22,8 +22,8 @@ function App() {
   const [init, setInit] = useState(false);
   const [display, setDisplay] = useState(defaultText);
   const [input, setInput] = useState("");
-  const [cursor, setCursor] = useState("|");
-  setCursor("|");
+  //const [cursor, setCursor] = useState("|");
+  const cursor = "|"
   const inputRef = useRef(null);
   useEffect(() => {
     if (!init) {
