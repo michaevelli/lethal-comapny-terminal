@@ -25,7 +25,6 @@ function App() {
   setCursor("|");
   const inputRef = useRef(null);
   useEffect(() => {
-    console.log("useEffect: " + input)
     if (!init) {
       setInit(true);
       if (inputRef.current !== null) {
@@ -38,7 +37,7 @@ function App() {
         }
       })
     }
-  }, [init]);
+  }, [init, defaultText, inputRef]);
 
   return (
     <main>
