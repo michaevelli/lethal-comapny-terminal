@@ -1,0 +1,16 @@
+name: deploy to github pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy: 
+    runs-on: ubuntu-latest
+    name: Deploy to Github Pages
+    steps:
+      - name: checkout site repo
+        uses: actions/checkout@v3
+      - name: deploy
+        run: |
+          npm i
+          npm run deploy
