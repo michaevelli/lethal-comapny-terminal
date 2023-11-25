@@ -19,7 +19,7 @@ function App() {
     ``,
     ``,
     ``,
-  ], [] );
+  ], [today] );
   const [init, setInit] = useState(false);
   const [display, setDisplay] = useState(defaultText);
   const [input, setInput] = useState("");
