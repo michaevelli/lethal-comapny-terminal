@@ -79,7 +79,7 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `heart.`,
                 ``
             ])
-        } else if (input.includes("off")) {
+        } else if (input.includes("mar")) {
             setDisplay([
                 `71-March`,
                 `----------------------`,
@@ -664,8 +664,34 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
     } else if (input.includes("buy")) {
         setDisplay([
             `You could not afford these items!`,
-            `Your balance is ▪️0.`
+            `Your balance is ▪️0.`,
+            ``
         ])
+    } else if (input.includes("route")) {
+        if (
+            input.includes("exp")
+            || input.includes("ass")
+            || input.includes("vow")
+            || input.includes("off")
+            || input.includes("mar")
+            || input.includes("rend")
+            || input.includes("dine")
+            || input.includes("titan")
+        ) {
+            setDisplay([
+                `Unable to route the ship currently. It must be in`,
+                `orbit around a moon to route the autopilot`,
+                `Use the main lever at the front desk to enter`,
+                `orbit.`,
+                ``,
+                ``
+            ])
+        } else {
+            setDisplay([
+                `[There was no action supplied with the word.]`,
+                ``
+            ])
+        }
     } else if (input === `help`) {
         setDisplay([
             `>MOONS`,

@@ -54,7 +54,9 @@ function App() {
           onBlur={(e) => setTimeout(() => {e.target.focus()}, 1)}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
-              renderDisplay(input, setDisplay, () => {setInput("")});
+              renderDisplay(input, setDisplay, () => {
+                setInput("");
+              });
             }
           }}
         />
