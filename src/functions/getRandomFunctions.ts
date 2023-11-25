@@ -34,8 +34,6 @@ function intToWeather(int: Number) {
             return "Flooded";
         case 5:
             return "Eclipsed";
-        default:
-            return "";
     }
     return "";
 }
@@ -52,8 +50,6 @@ function intToCompany(int: Number) {
             return "100";
         case 5:
             return "123";
-        default:
-            return "0";
     }
     return "0";
 }
