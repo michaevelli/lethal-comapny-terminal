@@ -661,6 +661,11 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 ``
             ])
         }
+    } else if (input.includes("buy")) {
+        setDisplay([
+            `You could not afford these items!`,
+            `Your balance is ▪️0.`
+        ])
     } else if (input === `help`) {
         setDisplay([
             `>MOONS`,
