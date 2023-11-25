@@ -22,6 +22,7 @@ function App() {
   const [display, setDisplay] = useState(defaultText);
   const [input, setInput] = useState("");
   const [cursor, setCursor] = useState("|");
+  setCursor("|");
   const inputRef = useRef(null);
   useEffect(() => {
     console.log("useEffect: " + input)

@@ -4,4 +4,5 @@ Recreating the lethal company terminal but as a [webpage](https://michaevelli.gi
 ## TODO
 - Add Bestiary entries
 - "Support" buying from store
+- Set random percentages/weather based on date
 - Maybe set everything up to have a better data structure than a string array manually ensured to be less than 35 characters
