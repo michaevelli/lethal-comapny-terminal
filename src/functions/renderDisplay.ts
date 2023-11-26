@@ -92,7 +92,7 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `FAUNA: Unknown`,
                 ``
             ])
-        } else if (input.includes("rend")) {
+        } else if (input.includes("ren")) {
             setDisplay([
                 `85-Rend`,
                 `----------------------`,
@@ -109,7 +109,7 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `exist here.`,
                 ``
             ])
-        } else if (input.includes("dine")) {
+        } else if (input.includes("din")) {
             setDisplay([
                 `7-Dine`,
                 `----------------------`,
@@ -126,7 +126,7 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `exist here.`,
                 ``
             ])
-        } else if (input.includes("titan")) {
+        } else if (input.includes("tit")) {
             setDisplay([
                 `8-Titan`,
                 `----------------------`,
@@ -262,7 +262,11 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `takes about ten seconds to recharge.`,
                 ``
             ])
-        } else if (input.includes("roaming locusts")) {
+        } else if (
+            input.includes("roaming locusts")
+            || input.includes("roam")
+            || input.includes("loc")
+        ) {
             setDisplay([
                 `Roaming Locusts`,
                 ``,
@@ -279,7 +283,10 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `light.`,
                 ``
             ])
-        } else if (input.includes("manticoils")) {
+        } else if (
+            input.includes("manticoils")
+            || input.includes("mant")
+        ) {
             setDisplay([
                 `Manticoils`,
                 ``,
@@ -304,7 +311,10 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `humans, although they are capable of transmitting`,
                 `Rabies, Rubenchloria, and Pitt Virus.`,
             ])
-        } else if (input.includes("bracken")) {
+        } else if (
+            input.includes("bracken")
+            || input.includes("brac")
+        ) {
             setDisplay([
                 `Bracken -- AKA flower man!`,
                 ``,
@@ -335,7 +345,11 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `process which is unique from other large animals.`,
                 ``
             ])
-        } else if (input.includes("circuit bees")) {
+        } else if (
+            input.includes("circuit bees")
+            || input.includes("cir")
+            || input.includes("bee")
+        ) {
             setDisplay([
                 `Circuit Bees`,
                 ``,
@@ -384,7 +398,11 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `indomitable Sigurd`,
                 ``
             ])
-        } else if (input.includes("baboon hawk")) {
+        } else if (
+            input.includes("baboon hawk")
+            || input.includes("bab")
+            || input.includes("hawk")
+        ) {
             setDisplay([
                 `Baboon hawk`,
                 ``,
@@ -422,7 +440,11 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `eyeless dogs. THEY TOOK M Y PICKLES`,
                 ``
             ])
-        } else if (input.includes("bunker spiders")) {
+        } else if (
+            input.includes("bunker spider")
+            || input.includes("bunk")
+            || input.includes("spi")
+        ) {
             setDisplay([
                 `Bunker spiders`,
                 ``,
@@ -458,7 +480,10 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `currently approved by the ITDA as of 10/6/2497.`,
                 ``
             ])
-        } else if (input.includes("thumpers")) {
+        } else if (
+            input.includes("thumpers")
+            || input.includes("thu")
+        ) {
             setDisplay([
                 `Thumpers`,
                 ``,
@@ -519,7 +544,11 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `somehow,, and we think it was my music.`,
                 ``,
             ])
-        } else if (input.includes("hoarding")) {
+        } else if (
+            input.includes("hoarding")
+            || input.includes("hoa")
+            || input.includes("bug")
+        ) {
             setDisplay([
                 `HOARDING BUG`,
                 ``,
@@ -576,7 +605,10 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `Just stare at htem or use a stun grenade! - Sigurd`,
                 ``
             ])
-        } else if (input.includes("snare")) {
+        } else if (
+            input.includes("snare")
+            || input.includes("flea")
+        ) {
             setDisplay([
                 `SNARE FLEA`,
                 ``,
@@ -599,7 +631,10 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `insides could make a good milkshake,,`,
                 ``
             ])
-        } else if (input.includes("eye")) {
+        } else if (
+            input.includes("eye")
+            || input.includes("dog")
+        ) {
             setDisplay([
                 `EYELESS DOG`,
                 ``,
@@ -625,7 +660,10 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `prey's exact location which are often incorrect.`,
                 ``
             ])
-        } else if (input.includes("spore")) {
+        } else if (
+            input.includes("spore")
+            || input.includes("liz")
+        ) {
             setDisplay([
                 `Spore lizards`,
                 ``,
@@ -661,6 +699,97 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 ``
             ])
         }
+    } else if (input.includes("view")) {
+        if ( input.includes("first")) {
+            setDisplay([
+                `Date: August 22, 1968`,
+                `Hello. i am writing this log to keep myself sane. I`,
+                `couldnt find a way to do the most basic thing on`,
+                `this old janky butt computer so i had Desmond add`,
+                `it in, the log feature. til now ive just been`,
+                `adding my own notes to the bestiary whatever i`,
+                `know. My brother said i should keep a journal so im`,
+                `doing what i can! I am writing in a proffessional`,
+                `manner, as these logs could become a historical`,
+                `record, as they will projbably be here for years,`,
+                `just as long as there isnt a clean wipe. that is`,
+                `what desmond saidfd`,
+                ``,
+                ``,
+                `If you are reading it in the future, you are`,
+                `probably from a nother crew. The turnover rate here`,
+                `is enormous, maybe cause this job sucks and every`,
+                `one turns over dead! Maybe I can give some help`,
+                `when I have some expirience. End log.`,
+                `Oh, our names are: Sigurd (me), Richard, Desmond,`,
+                `Jess.`,
+                ``
+            ])
+        } else if (input.includes("screams")) {
+            setDisplay([
+                `date: September 13, 1968`,
+                ``,
+                `for some reason i was the one who had to call the`,
+                `company number to report the acciddent. they were`,
+                `too scared to do it. It was the same fake voice i`,
+                `remember from the interview on the phone at home`,
+                `and the stupid training videos. but it heard what i`,
+                `said i think, cause it said they would contact the`,
+                `family and find a replacement and something e lse.`,
+                `It talked so fast.`,
+                ``,
+                ``,
+                `I learned you can hear the screams all the time in`,
+                `the walkie talkie when you;re  at the wall of the`,
+                `Company building. they didnt believe me, well now`,
+                `they do. It sounds just like when i heard it a`,
+                `couple weeks ago. They want to quit. I said I'm not`,
+                `a coward. I just got this job`,
+                ``
+            ])
+        } else if (input.includes("smells")) {
+            setDisplay([
+                `gosh, this suit is squeezing me like I'm a gosh`,
+                `damn mummy! im a grown man, give it some space`,
+                `between the legs! it's killing me i'm dying! i hope`,
+                `youre happy dad, I FINALLY got a job. screw you!`,
+                `Everyone here smells. especially Rich. I'm going to`,
+                `throw him in the lake. I don't care what it's made`,
+                `of. i love being on camera duty. oh`,
+                `i forgot the date it's August 24, 1968. this`,
+                `keyboard has dsadjilfasqt..f/g;`,
+                ``,
+                ``,
+                `today we found a couple frying pans and a big nail.`,
+                `Worth almost nothing. what is the company even`,
+                `using it for`,
+                ``
+            ])
+        } else if (input.includes("sound")) {
+            setDisplay([
+                `i got woken up early this morning because we were`,
+                `goign to the company building to sell our useless`,
+                `garbage. The rate was 120% which Desmond says is`,
+                `rare and he didnt want to miss it, hes been`,
+                `watching it like the stupid stocks`,
+                ``,
+                `it still stucks here, Rich still smells like a piece`,
+                `of hsit .i can barely sleep. i heard the wrorst`,
+                `sound behind the wall of the company building, it`,
+                `sounded like crying red faces all churned up and`,
+                `swept away by concrete, like the pestle and bowl my`,
+                `mom crushes up her seeds and speces in. i still`,
+                `hear it. Its a nightmare. no one else heard it.`,
+                `they dont know what to do. Jess thinks i;m "home`,
+                `sick," no im sick of this cheap suit`,
+                `date: September 4, 1968`
+            ])
+        } else {
+            setDisplay([
+                `[DATA CORRUPTED OR OVERWRITTEN]`,
+                ``
+            ])
+        }
     } else if (input.includes("buy")) {
         setDisplay([
             `You could not afford these items!`,
@@ -674,9 +803,9 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
             || input.includes("vow")
             || input.includes("off")
             || input.includes("mar")
-            || input.includes("rend")
-            || input.includes("dine")
-            || input.includes("titan")
+            || input.includes("ren")
+            || input.includes("din")
+            || input.includes("tit")
         ) {
             setDisplay([
                 `Unable to route the ship currently. It must be in`,
@@ -808,9 +937,24 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
         ])
     } else if (input === `other`) {
         setDisplay([
-            `Other commands:.`,
+            `Other commands:`,
             ``,
             `There are no other commands`,
+            ``
+        ])
+    } else if (input === `sigurd`) {
+        setDisplay([
+            `SIGURD'S LOG ENTRIES`,
+            ``,
+            `To read a log, use keyword "VIEW" before its name.`,
+            `---------------------------------`,
+            ``,
+            ``,
+            `First Log - Aug 22`,
+            `Screams - Sep 13`,
+            `Smells here! - Aug 24`,
+            `Sound behind the wall - Sep 4`,
+            ``,
             ``
         ])
     } else {
