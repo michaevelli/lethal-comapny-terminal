@@ -3,7 +3,33 @@ import getRandomStats from "./getRandomFunctions";
 function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateAction<string[]>>, postExecuteFunction: Function | null = null) {
     input = input.toLowerCase();
     const stats = getRandomStats()
-    if (input.includes("info")) {
+    if (input === "jess") {
+        setDisplay([
+            ``,
+            ``,
+            ``,
+            ``,
+            ``,
+            `n`,
+            ``,
+            ``,
+            ``,
+            ``,
+            ``,
+            ``,
+            ``,
+            ``,
+            `JESTER`,
+            ``,
+            `Sigurd's danger level: 90% Get out o fthere before`,
+            `it goes APE!! You cant hide from it, just evacuate`,
+            ``,
+            `Scientific name: INSANEUS THINGUS`,
+            `THERE'S NO FREACKING SCIENTIFC RECORD! good luck,`,
+            `you know as much as us. we just call it the jester`,
+            ``
+        ])
+    } else if (input.includes("info")) {
         if (input.includes("company")) {
             setDisplay([
                 `The Company is buying your goods at ${stats.company.percentage}%.`,
@@ -682,7 +708,7 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `release spores as a defense mechanism--an unique`,
                 `example of a mutualistic symbiotic relationship.`,
                 ``,
-                `Spre lizards have a very timid temperment, tending`,
+                `Sopre lizards have a very timid temperment, tending`,
                 `to avoid all confrontation if possible. If their`,
                 `attempts at threat display are not effective, they`,
                 `may attempt to attack, so it's not recommended to`,
@@ -691,6 +717,56 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `domesticated hundreds of years ago, however this`,
                 `effort was set aside by an initiative to harvest`,
                 `their tails for their medicinal properties.`,
+                ``
+            ])
+        } else if (
+            input.includes("forest keeper")
+            || input.includes("forest")
+            || input.includes("keeper")
+        ){
+            setDisplay([
+                `FOREST KEEPER`,
+                ``,
+                `Sigurd's danger level: 50%`,
+                ``,
+                `Scientific name: Satyrid-proceritas`,
+                `Believed to share a common ancestor with rapax-`,
+                `folium, these behemoths are called Forest Keepers`,
+                `for the biomes they often inhabit. Their bodies`,
+                `bare markings on their front and back which mimic`,
+                `eyes--this trait is more helpful in their youth, as`,
+                `they are not agile. Their skin is a unique, dense`,
+                `material which hardens further throughout their`,
+                `lives; the large spikes and bumps across their`,
+                `bodies form as a result of aging.`,
+                ``,
+                `It's been said Forest Keepers exhibit a curious`,
+                `behavior similar to that of a human child the age`,
+                `of 5 or 6. They will eat antyhing they find`,
+                `fascinating. Forest Keepers don't actually need to`,
+                `put anything into their mouths, and it's theorized`,
+                `their main source of energy is a process similar to`,
+                `photosynthesis. Still, this makes them relatively`,
+                `dangerous to observe. They can see across long`,
+                `distances, so staying low and making use of cover`,
+                `is a must. They cannot enter small spaces and are`,
+                `not generally destructive, so stay close to shelter`,
+                `or overhangs.`,
+                ``
+            ])
+        } else if (
+            input.includes("jester")
+            || input.includes("jes")
+        ){
+            setDisplay([
+                `JESTER`,
+                ``,
+                `Sigurd's danger level: 90% Get out o fthere before`,
+                `it goes APE!! You cant hide from it, just evacuate`,
+                ``,
+                `Scientific name: INSANEUS THINGUS`,
+                `THERE'S NO FREACKING SCIENTIFC RECORD! good luck,`,
+                `you know as much as us. we just call it the jester`,
                 ``
             ])
         } else {
@@ -920,6 +996,8 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
             `Eyeless dogs`,
             `Baboon hawks`,
             `Coil-heads`,
+            `Forest Keeper`,
+            `Jester`,
             ``,
             ``
         ])
