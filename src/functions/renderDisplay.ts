@@ -769,6 +769,32 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
                 `you know as much as us. we just call it the jester`,
                 ``
             ])
+        } else if (
+            input.includes("earth")
+            || input.includes("levi")
+        ){
+            setDisplay([
+                `EARTH LEVIATHAN`,
+                ``,
+                `Sigurd's danger level: 2% cause they can't hide`,
+                `from the ship cmaeras!!`,
+                ``,
+                `Scientific name: Hemibdella-gigantis`,
+                `The reverently named Earth Leviathan, of the family`,
+                `Piscicolidae, is one of the largeset invertibrates`,
+                `found around the Thistle Nebula. None have been`,
+                `captured, so not much is known of their biology.`,
+                ``,
+                `They seem to behave as predators. It's speculated`,
+                `they can burrow as far as 40 meters underground,`,
+                `judging by  the incredible excavations they can`,
+                `leave behind. They can detect even the slightest`,
+                `vibrations, and for this reason it's not`,
+                `recommended to stay still if they are nearby; that`,
+                `is a myth. Instead, if you hear them burrowing,`,
+                `retrace your steps.`,
+                ``
+            ])
         } else {
             setDisplay([
                 `[This action was not compatible with this object.]`,
@@ -998,6 +1024,7 @@ function renderDisplay(input: string, setDisplay: React.Dispatch<React.SetStateA
             `Coil-heads`,
             `Forest Keeper`,
             `Jester`,
+            `Earth Leviathan`,
             ``,
             ``
         ])
